@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personal Portfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://kit.fontawesome.com/df7bf05a7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#internships">Internships</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Pranita Choudary</span><br> From India Currently Pursuing My <br> Final Year Btech</h1>
+                </div>
+                <img src="Images/img2.jpeg" class="pic">
+                
+            </div>  
+        </div>
+    </section>
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/img3.jpeg" class="pic1">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <br><br>
+                        <p class="tex">
+                            I'm pranita choudary here to leverage my technical skills and evolve as a software developer in order to reach
+                            my career goal and to seek and maintain a full-time position that professional challenges utilizing interpersonal 
+                            skills and problem-solving skills.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Certification/Courses')">Certifications/Courses</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                <li><span>Programming Languages</span><br>Solving real-world problems</li>
+                                <li><span>DBMS</span><br>Run queries on data</li>                     
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2024</span><br>Bachelor Of Degree</li>
+                                <li><span>2020</span><br>Board Of Intermediate Education</li>
+                                <li><span>2018</span><br>Gnana Bharathi English Medium School</li>                     
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certification/Courses">
+                            <ul>
+                                <li><span>2021</span><br>HTML,JAVASCRIPT certification from infosys springboard</li>
+                                <li><span>2022(6 Months)</span><br>Programming In Java Course From Nptel</li>
+                                <li><span>2023(5 Months)</span><br>Data Analysis With Python</li>                     
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="internships">
+        <div class="container">
+            <h1 class="sub-title">My Internships</h1>
+            <div class="intern-list">
+                <div id="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>It involves creating the visual elements and layout of a website.While coding involves translating these designs
+                       into a functional website using programming languages like HTML,CSS, and JavaScript.Typically it translates 
+                       to code.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div id="box">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analyst</h2>
+                    <p>It Conducts data cleaning, data merging, data quality control and back-ups. Create documentation for each data
+                        request or research project. Maintain and update dashboard datasets in Tableau or Cognos BI. Interpret the
+                        findings and provide conclusions.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div id="box">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Machine Learning</h2>
+                    <p>It includes designing and implementing algorithms using existing software packages such as R or Python. Designing,   
+                        implementing maintaining models using statistical software such as SPSS, SAS or R. Interpreting results and
+                        providing recommendations based on findings.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/img4.jpg">
+                    <div class="layer">
+                        <h3>E-form Website</h3>
+                        <p>This website allows you to seek permission through an electronic form ,instead 
+                            seeking it through manually.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/img5.jpg">
+                    <div class="layer">
+                        <h3>Doctor Visit Analysis</h3>
+                        <p>This is used to validate either a patient is diseased or not and it will process the data 
+                            and gives result in graphical representations.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/img6.jpg">
+                    <div class="layer">
+                        <h3>Feedback Analysis</h3>
+                        <p> The Objective is to implement a feedback analyser system.Feedback analysis is performed based 
+                            on the textual dataset and any user can check the type of feedback.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9876543234</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
